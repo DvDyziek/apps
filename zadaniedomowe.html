@@ -6,9 +6,9 @@
 <body>
     <h1>Formularz</h1>
     <form action="przetwarzanie.php" method="post">
-        <label for="login">Login:</label>
+        <label for="login">Login:</label><br>
         <input type="text" id="login" name="login"><br><br>
-        <label for="password">podaj haslo</label>
+        <label for="password">podaj haslo</label><br>
         <input type="password" type="range" min="10" max="40" password="password">
         <br>
     </br>
@@ -28,7 +28,9 @@
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
         </select><br><br>
-        
+        <label for="info">info</label><br>
+        <input id="info" type="text" name="nazwa" value="wpisz tu coś">
+        <br>
         <label for="vehicle">Posiadam:</label><br>
         <input type="radio" id="bike" name="vehicle" value="bike">
         <label for="bike">Rower</label><br>

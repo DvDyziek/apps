@@ -3,9 +3,11 @@
 <head>
     <title>Formularz</title>
 </head>
-<body style="border: solid black 1px; width: 300px;">
-    <h1 >Informacje osobiste</h1>
-    <form action="przetwarzanie.php" method="post">
+<body>
+    <h1 ></h1>
+    <fieldset style="width: 620px;">
+        <legend>informacje osobiste:</legend>
+    <form>
         <label for="login">Login:</label><br>
         <input type="text" id="login" name="login"><br><br>
         <label for="password">podaj haslo</label><br>
@@ -29,8 +31,11 @@
             <option value="fiat">Fiat</option>
         </select><br><br>
         <label for="info">info</label><br>
-        <input id="info" type="text" name="nazwa" value="wpisz tu coś" >
+        
+        <textarea style="width: 400px;height: 160px;" name="message" rows="5" cols="10" placeholder="wpisz tu coś"></textarea>
         <br>
+        <br><br><br><label for="liczba"><b>Number</b></label>
+        <br><input type="number" name="liczba" id="liczba" min="0"><br>
         <label for="vehicle">Posiadam:</label><br>
         <input type="radio" id="bike" name="vehicle" value="bike">
         <label for="bike">Rower</label><br>
